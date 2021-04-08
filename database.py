@@ -9,3 +9,5 @@ conn.execute("COMMIT")
 
 c.execute("""SELECT * FROM EMP""")
 print(next(c))
+
+c.execute("UPDATE EMP SET SALATY = 60000 WHERE ID = 101")
