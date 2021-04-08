@@ -12,3 +12,6 @@ print(next(c))
 
 c.execute("UPDATE EMP SET SALATY = 60000 WHERE ID = 101")
 conn.execute("COMMIT")
+
+c.execute("""DELETE FROM EMP WHERE ID = 101""")
+conn.execute("COMMIT")
